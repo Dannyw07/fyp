@@ -17,6 +17,9 @@ app.use("/auth", usersRouter);
 const golfClubsRouter = require("./routes/golfclub");
 app.use("/golfclubs", golfClubsRouter);
 
+const NewsRouter = require("./routes/news");
+app.use("/news", NewsRouter);
+
 db.sequelize.sync().then(() => {
   app.listen(4000, () => {
     console.log("Server is running on port 4000");
