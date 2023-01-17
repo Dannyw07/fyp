@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     news_photo: {
       type: DataTypes.BLOB,
-      allowNull: false,
+      allowNull: true,
     },
     news_desc: {
       type: DataTypes.TEXT("long"),
