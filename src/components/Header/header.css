@@ -1,0 +1,69 @@
+.header {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  max-width: 1024px;
+  height: 500px;
+  /*margin-left, margin-right, left, right is to make sure the div is center */
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+.headerContainer {
+  max-width: 1024px;
+
+  margin: 20px 0px 100px 0px;
+}
+
+.headerDesc {
+  margin: 20px 0px;
+}
+
+.my-image {
+  width: 1024px;
+  height: 500px;
+}
+
+.headerSearch {
+  width: 1024px;
+  height: 30px;
+  background-color: white;
+  border: 3px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.headerSearchDate {
+  color: green;
+}
+
+.headerBtn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 15px 32px;
+}

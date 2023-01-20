@@ -1,0 +1,60 @@
+.availableTimeContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.availableTimeWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+.availableTimeSearch {
+  flex: 1;
+  background-color: #febb02;
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+}
+
+.atTitle {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.atItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.atItem > label {
+  font-size: 12px;
+}
+
+.atItem > input {
+  width: 240px;
+  height: 30px;
+  border: none;
+  padding: 5px;
+}
+
+.atItem > span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 240px;
+  height: 30px;
+  background-color: white;
+  padding: 5px;
+}
+.availableTimeResult {
+  flex: 3;
+}
+.availableTimeSearch > button {
+  border-radius: 10px;
+  border: none;
+}

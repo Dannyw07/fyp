@@ -1,0 +1,197 @@
+.golfclubContainer {
+  display: flex;
+  justify-content: center;
+
+  background-color: lightgray;
+}
+
+.golfclubWrapper {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.golfclubTitle {
+  font-size: 24px;
+}
+.golfclubAddress {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.golfclubDistance {
+  font-weight: 500;
+}
+
+.golfclubPriceHighlight {
+  color: green;
+  font-weight: 500;
+}
+
+.golfclubImages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.golfclubImgWrapper {
+  width: 33%;
+}
+
+.golfclubImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.golfclubDetails {
+  background-color: aliceblue;
+  margin-top: 50px;
+  border-radius: 10px;
+  font-family: " Poppins", "Arial Narrow", Arial, sans-serif;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.golfclubDetailsText {
+  padding: 35px;
+}
+
+.golfclubDetailsPrice {
+  background-color: lightgreen;
+  margin-top: 25px;
+  border-radius: 10px;
+  font-family: " Poppins", "Arial Narrow", Arial, sans-serif;
+  padding: 35px;
+}
+
+.golfclubDetailsPrice > button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.golfclubRating {
+  background-color: white;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
+.rating {
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+.userIcon {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.rating-2 {
+  font-size: 8px;
+
+  /*gap: 10px;*/
+}
+
+.stars {
+  font-size: 20px;
+  color: yellow;
+}
+
+.user1 {
+  padding: 20px;
+}
+
+.user1 > h1 {
+  margin-left: 10px;
+}
+
+.date > h1 {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  font-size: 12px;
+  margin-left: 60px;
+}
+
+.user1-detail {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  /*border-style: solid;
+   border-width: 3px;*/
+}
+
+.desc > p {
+  margin-left: 60px;
+  font-size: 20px;
+}
+
+.like {
+  margin-left: 60px;
+  font-size: 20px;
+  color: maroon;
+}
+.user {
+  border-style: solid;
+  border-color: lightgray;
+  border-width: thin;
+}
+
+.user2 {
+  padding: 20px;
+}
+
+.user3 {
+  padding: 20px;
+}
+
+.searchContainer {
+  width: 934px;
+  height: 71px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.searchItem {
+  display: flex;
+  float: left;
+  align-items: center;
+  width: 229px;
+  height: 50px;
+  margin-right: 20px;
+}
+input {
+  /* outline: none; */
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  border: 0;
+  font-size: 20px;
+}
+
+.searchButton {
+  border: none;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 4px 2px;
+  /* padding: 15px 32px;  */
+}
+
+.Datepicker {
+  font-size: 20px;
+  border: 0;
+}

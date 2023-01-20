@@ -1,0 +1,45 @@
+.regSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.leftSideReg {
+  flex: 65%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+.rightSideReg {
+  flex: 35%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+.regTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.regTitle > a {
+  text-decoration: none;
+}
+
+/* .Lside {
+  display: flex;
+  flex-direction: column;
+}
+
+.regFormRow {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+button {
+  margin-top: 30px;
+} */

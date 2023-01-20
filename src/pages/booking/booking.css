@@ -1,0 +1,49 @@
+.bookingWrapper {
+  display: flex;
+  margin: 20px;
+  height: 700px;
+}
+.mainComponent {
+  flex: 80%;
+  margin: 10px;
+}
+.bookingTitle {
+  background-color: #021e39;
+  color: white;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+/* .mainComponent > h1 {
+  background-color: teal;
+  color: black;
+} */
+.sideComponent {
+  border-radius: 10px;
+  flex: 20%;
+  margin: 10px;
+  background-color: black;
+  color: white;
+}
+
+.sideComponent > h1 {
+  text-align: center;
+}
+
+.sideComponent > h2 {
+  text-align: center;
+}
+
+.component {
+  height: auto;
+  margin-top: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectPlayerComponent {
+  width: 1100px;
+}

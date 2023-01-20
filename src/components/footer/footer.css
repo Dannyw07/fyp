@@ -1,0 +1,62 @@
+.footerContainer {
+  background-color: #021e39;
+  width: 100%;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.fLists {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.fList {
+  list-style: none;
+  line-height: 1.8;
+}
+.fheader {
+  font-size: 30px;
+}
+.fListItem {
+  cursor: pointer;
+}
+
+.fText {
+  /* margin-left: 100px; */
+  font-size: 18px;
+  color: white;
+}
+
+.listLeftSide {
+  flex: 60%;
+  height: 300px;
+  /*height: calc(100vh - 10px);*/
+  display: grid;
+  place-items: center;
+  padding: 50px;
+}
+
+.listRightSide {
+  color: black;
+  background-color: beige;
+  flex: 40%;
+  height: 300px;
+  /*height: calc(100vh - 10px);*/
+  display: flex;
+  place-items: center;
+  padding: 30px;
+}
+.mailistContent {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.fListItem:hover {
+  color: red;
+}

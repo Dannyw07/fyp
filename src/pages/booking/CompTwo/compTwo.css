@@ -1,0 +1,19 @@
+.componentTwoContainer {
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 1100px;
+}
+
+/* .player1 > input {
+  width: 450px;
+  border: 1px solid;
+}
+
+.player2 > input {
+  width: 450px;
+  border: 1px solid;
+} */

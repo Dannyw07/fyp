@@ -1,0 +1,14 @@
+.contactUsContainer {
+  margin-top: 20px;
+  margin-bottom: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+/* .toast-message {
+  background: darkblue;
+  color: #fff;
+  font-size: 20px;
+  width: 34vw;
+  padding: 30px 20px;
+} */

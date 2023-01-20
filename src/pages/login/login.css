@@ -1,0 +1,67 @@
+.loginSection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.leftSide-1 {
+  flex: 65%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+.rightSide-2 {
+  flex: 35%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+.logIN {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loginInput {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.75rem 0.75rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  background-color: rgb(24, 81, 187);
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  height: 3rem;
+  white-space: nowrap;
+  color: rgb(232, 243, 255) !important;
+  padding: 0.5rem 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bottom {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

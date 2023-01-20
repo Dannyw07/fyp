@@ -1,0 +1,62 @@
+.topBar > h1 {
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+}
+.MuiPagination-root {
+  display: flex;
+  justify-content: center;
+}
+
+.Img {
+  margin: 20px 20px 0px 20px;
+  width: 200x;
+  height: 300px;
+  object-fit: cover;
+}
+
+.newsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.articleOne {
+  max-width: 580px;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.articleOne:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.Desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 2;
+  margin-left: 20px;
+}
+
+.Title {
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin-right: 15px;
+}
