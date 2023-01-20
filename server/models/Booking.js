@@ -14,14 +14,6 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TIME,
       allowNull: false,
     },
-    booking_NoP: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    booking_NoH: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     totalPrice: {
       type: DataTypes.INTEGER,
       allowNull: false,
