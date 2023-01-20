@@ -30,7 +30,7 @@ router.get("/", async (req, res) => {
 router.get("/findBy/:id", async (req, res) => {
   const id = req.params.id;
   try {
-    const findNews = await news.findAll();
+    const findNews = await news.findByPk(id);
     res.json(findNews);
   } catch (err) {
     req.json(err);
@@ -51,5 +51,7 @@ router.delete("/:news_id", async (req, res) => {
     res.json(err);
   }
 });
+
+//update one particular news from database
 
 module.exports = router;
