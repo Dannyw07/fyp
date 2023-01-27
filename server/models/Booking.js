@@ -6,18 +6,23 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true,
       primaryKey: true,
     },
-    bookng_date: {
-      type: DataTypes.DATE,
+    reference_date: {
+      type: DataTypes.STRING(255),
+      allowNull: false,
+    },
+    booking_date: {
+      type: DataTypes.DATEONLY,
       allowNull: false,
     },
     booking_time: {
-      type: DataTypes.TIME,
+      type: DataTypes.TIME(4),
       allowNull: false,
     },
-    totalPrice: {
+    price: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
   });
+
   return booking;
 };

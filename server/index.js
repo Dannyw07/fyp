@@ -17,6 +17,9 @@ app.use("/auth", usersRouter);
 const golfClubsRouter = require("./routes/golfclub");
 app.use("/golfclubs", golfClubsRouter);
 
+const bookingRouter = require("./routes/booking");
+app.use("/golfclubs/AvailableSlot", bookingRouter);
+
 const NewsRouter = require("./routes/news");
 app.use("/news", NewsRouter);
 

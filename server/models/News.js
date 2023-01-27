@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    news_photo: {
+    news_img: {
       type: DataTypes.BLOB,
       allowNull: true,
     },
@@ -18,6 +18,16 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT("long"),
       allowNull: false,
     },
+    news_author: {
+      type: DataTypes.STRING(255),
+      allowNull: false,
+    },
   });
+
+  news.associate = (models) => {
+    news.hasMany(models.comment, {
+      onDelete: "cascade",
+    });
+  };
   return news;
 };

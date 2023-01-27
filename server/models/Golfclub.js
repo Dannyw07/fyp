@@ -38,18 +38,17 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT("long"),
       allowNull: false,
     },
-    gc_teetime: {
-      type: DataTypes.STRING(255),
-      allowNull: false,
-    },
-    gc_teetime: {
-      type: DataTypes.STRING(255),
-      allowNull: true,
-    },
     gc_price: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
     },
+    // booking_id: {
+    //   //foreign key in golfclub table
+    //   type: DataTypes.INTEGER,
+    //   allowNull: false,
+    //   required: true,
+    // },
   });
+
   return golfclub;
 };
