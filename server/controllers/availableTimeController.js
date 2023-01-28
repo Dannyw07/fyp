@@ -1,19 +1,19 @@
 //create main Model
 
-const { booking, sequelize } = require("../models");
+const { aTime, sequelize } = require("../models");
 
 //create available Time slot
 const addTimeSlot = async (req, res) => {
   const id = req.params.id;
   try {
     let data = {
-      booking_id: id,
+      aTime_id: id,
       reference_date: req.body.reference_date,
-      booking_date: req.body.booking_date,
-      booking_time: req.body.booking_time,
+      aTime_date: req.body.aTime_date,
+      aTime_time: req.body.aTime_time,
       price: req.body.price,
     };
-    const timeSlot = await booking.create(data);
+    const timeSlot = await aTime.create(data);
     res.status(200).send(timeSlot);
   } catch (err) {
     res.json(err);
@@ -22,15 +22,15 @@ const addTimeSlot = async (req, res) => {
 //Get all Time slot
 const GetAllTimeSlot = async (req, res) => {
   try {
-    const listOfTimeSlot = await booking.findAll({
+    const listOfTimeSlot = await aTime.findAll({
       attributes: {
         include: [
-          "booking_id",
+          "aTime_id",
           "reference_date",
-          "booking_date",
+          "aTime_date",
           [
-            sequelize.fn("DATE_FORMAT", sequelize.col("booking_time"), "%H:%i"),
-            "booking_time",
+            sequelize.fn("DATE_FORMAT", sequelize.col("aTime_time"), "%H:%i"),
+            "aTime_time",
           ],
           "price",
         ],
@@ -46,7 +46,7 @@ const GetAllTimeSlot = async (req, res) => {
 const GetOneTimeSlot = async (req, res) => {
   const id = req.params.id;
   try {
-    const findTimeSlot = await booking.findByPk(id);
+    const findTimeSlot = await aTime.findByPk(id);
     res.json(findTimeSlot);
   } catch (err) {
     res.json(err);
@@ -56,9 +56,9 @@ const GetOneTimeSlot = async (req, res) => {
 const DeleteOneTimeSlot = async (req, res) => {
   const id = req.params.id;
   try {
-    await booking.destroy({
+    await aTime.destroy({
       where: {
-        booking_id: id,
+        aTime_id: id,
       },
     });
     res.json("Selected TimeSlot has been deleted.");
@@ -70,7 +70,7 @@ const DeleteOneTimeSlot = async (req, res) => {
 const updateTimeSlot = async (req, res) => {
   const id = req.params.id;
   try {
-    const updatedts = await booking.update({ where: { booking_id: id } });
+    const updatedts = await aTime.update({ where: { aTime_id: id } });
     res.status(200).send(updatedts);
   } catch (err) {
     res.json(err);

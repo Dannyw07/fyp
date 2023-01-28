@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
-  const booking = sequelize.define("booking", {
-    booking_id: {
+  const aTime = sequelize.define("aTime", {
+    aTime_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       autoIncrement: true,
@@ -10,11 +10,11 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING(255),
       allowNull: false,
     },
-    booking_date: {
+    aTime_date: {
       type: DataTypes.DATEONLY,
       allowNull: false,
     },
-    booking_time: {
+    aTime_time: {
       type: DataTypes.TIME(4),
       allowNull: false,
     },
@@ -24,5 +24,5 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  return booking;
+  return aTime;
 };
