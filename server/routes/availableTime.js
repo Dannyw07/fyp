@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const availableTimeController = require("../controllers/availableTimeController");
+const availableTimeController = require("../controllers/availableTimeController.js");
 
 //create time slot
 router.post("/addTimeSlot", availableTimeController.addTimeSlot);

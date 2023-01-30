@@ -52,7 +52,7 @@ router.post("/login", userController.login);
 // });
 
 //get all users information
-router.post("//", userController.getUser);
+router.post("/", userController.getUser);
 // router.get("/", async (req, res) => {
 //   const getAllUsers = await users.findAll();
 //   res.json(getAllUsers);

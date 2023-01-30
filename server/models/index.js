@@ -47,10 +47,24 @@ db.Sequelize = Sequelize;
 //ASSOCIATIONS
 
 //Golfclub
-db.golfclub.hasMany(db.booking);
+db.golfclub.hasMany(db.aTime);
 
 //Booking
-db.booking.belongsTo(db.golfclub);
+db.aTime.belongsTo(db.golfclub);
+
+db.users.hasMany(db.booking);
+
+db.booking.belongsTo(db.users);
+db.booking.belongsTo(db.aTime);
+
+// db.booking.belongsToMany(db.aTime, {
+//   through: db.booking,
+//   foreignKey: "reference",
+// });
+// db.aTime.belongsToMany(db.booking, {
+//   through: db.booking,
+//   foreignKey: "reference_date",
+// });
 
 // db.golfclub = require("../models/Golfclub")(sequelize, DataTypes);
 // db.booking = require("../models/Booking")(sequelize, DataTypes);

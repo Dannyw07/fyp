@@ -13,6 +13,9 @@ module.exports = (sequelize, DataTypes) => {
     aTime_date: {
       type: DataTypes.DATEONLY,
       allowNull: false,
+      validate: {
+        notEmpty: true,
+      },
     },
     aTime_time: {
       type: DataTypes.TIME(4),

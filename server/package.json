@@ -10,6 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@admin-bro/sequelize": "^1.2.1",
+    "@adminjs/custom-components": "^2.0.0",
+    "@adminjs/express": "^5.1.0",
+    "@adminjs/upload": "^3.0.1",
+    "admin-bro": "^4.0.1",
+    "adminjs": "^6.8.2",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.1",
     "cloudinary": "^1.33.0",
