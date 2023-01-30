@@ -9,6 +9,11 @@ const express = require("express");
 const db = require("./models");
 AdminJS.registerAdapter(AdminJSSequelize);
 const PORT = 4000;
+
+const DEFAULT_ADMIN = {
+  email: "admin@example.com",
+  password: "password",
+};
 const startAdminJS = async () => {
   const app = express();
 
